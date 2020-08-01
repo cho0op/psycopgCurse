@@ -1,6 +1,5 @@
 import psycopg2
 
-url = 
 
 import datetime
 import database
@@ -52,7 +51,7 @@ def mark_movie_as_watched():
     database.watch_movie(username, movie_id)
 
 
-while (user_input := input(menu)) != "6":
+while (user_input := input(menu)) != "8":
     if user_input == "1":
         add_movie_to_database()
     elif user_input == "2":
