@@ -1,7 +1,12 @@
-import sqlite3, datetime
+import os
+import datetime
+import psycopg2
 
-connection = sqlite3.connect('data.db')
+from dotenv import load_dotenv
 
+load_dotenv()
+
+connection=psycopg2.connect(os.environ["DATABASE_URl"])
 
 def create_tables():
     with connection:
