@@ -1,6 +1,6 @@
 import psycopg2
 
-url = "postgres://lcfzejbt:nBfEmlpRWMl2eI-a1rPsETWzm_xFyiIB@balarama.db.elephantsql.com:5432/lcfzejbt"
+url = 
 
 import datetime
 import database
